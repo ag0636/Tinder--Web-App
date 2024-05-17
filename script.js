@@ -78,7 +78,7 @@ function select(elem) {
 }
 
 let curr = 0;
-letisAnimating = false;
+let isAnimating = false;
 
 function setData(index) {
     select(".prflimg img").src = users[index].profilePic;
@@ -98,7 +98,7 @@ function setData(index) {
 
     select(".tags").innerHTML = clutter;
 
-    
+
     select(".bio p").textContent = users[index].bio;
 
 }
@@ -108,7 +108,7 @@ function setData(index) {
     select(".incomingcard img").src = users[curr + 1]?.displayPic;
 
 
-    
+
 
 
 
@@ -156,12 +156,12 @@ function imageChange() {
             ease: Circ,
             duration: .9
         }, "a")
-            .from(".incomingcard", {
-                scale: .9,
-                opacity: 0,
-                ease: Circ,
-                duration: 1.1
-            }, "a")
+        .from(".incomingcard", {
+            scale: .9,
+            opacity: 0,
+            ease: Circ,
+            duration: 1.1
+        }, "a")
 
     }
 
